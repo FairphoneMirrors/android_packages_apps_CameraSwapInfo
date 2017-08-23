@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/offline_details_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/header_fragment" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="@dimen/main_padding">
+
+        <Button
+            android:id="@+id/button_close"
+            style="@style/ButtonWhiteBlue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/camera_swap_close" />
+
+        <TextView
+            android:id="@+id/instructions"
+            style="@style/TextRegular14BlueDark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/camera_swap_long_text"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="10sp"
+            android:lineSpacingExtra="4sp" />
+
+        <TextView
+            android:id="@+id/url"
+            style="@style/TextRegular14BlueDark"
+            android:autoLink="web"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/camera_swap_url"
+            android:layout_below="@+id/instructions"
+            android:layout_alignStart="@+id/instructions" />
+
+        <CheckBox
+            style="@style/TextRegular14BlueDark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dont_show_again_checkbox"
+            android:checked="false"
+            android:text="@string/camera_swap_dont_show_again"
+            android:layout_above="@+id/button_close"
+            android:layout_marginBottom="5dp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

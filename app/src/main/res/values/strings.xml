@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+    <string name="app_name" translatable="false">Fairphone Camera Info</string>
+    <string name="camera_swap_instructions">Camera module successfully replaced</string>
+    <string name="camera_swap_url">https://fairphone.com/camera-swap</string>
+    <string name="camera_swap_dont_show_again">Don\'t show again</string>
+    <string name="camera_swap_close">Close</string>
+    <string name="camera_swap_long_text">Make sure to select the appropriate resolution for this camera module in your camera app before starting to take pictures.\n\nVisit the following article for this and more information on how to get the best out of your camera:</string>
+</resources>

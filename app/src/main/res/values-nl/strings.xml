@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="camera_swap_instructions">Cameramodule succesvol vervangen</string>
+    <string name="camera_swap_dont_show_again">Niet meer laten zien</string>
+    <string name="camera_swap_close">Sluiten</string>
+    <string name="camera_swap_long_text">Selecteer de juiste resolutie voor deze cameramodule in je camera app voordat je foto’s begint met foto’s nemen.\n\nBekijk hiervoor het volgende artikel en lees meer over hoe je het beste uit je camera kunt halen:</string>
+    <string name="camera_swap_url">https://fairphone.com/camera-swap-nl</string>
+</resources>

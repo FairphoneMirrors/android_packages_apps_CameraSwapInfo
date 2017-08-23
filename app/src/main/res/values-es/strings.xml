@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="camera_swap_instructions">Cámara reemplazada con éxito</string>
+    <string name="camera_swap_dont_show_again">No mostrar de nuevo</string>
+    <string name="camera_swap_close">Cerrar</string>
+    <string name="camera_swap_long_text">"Antes de hacer fotos, asegúrate de seleccionar la resolución adecuada para este módulo de cámara en tu aplicación de cámara.\n\nLee el siguiente artículo para más información y para sacar el máximo provecho a tu nueva cámara. "</string>
+    <string name="camera_swap_url">https://fairphone.com/camera-swap-es</string>
+</resources>

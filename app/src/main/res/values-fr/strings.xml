@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="camera_swap_instructions">Le module caméra a bien été remplacé</string>
+    <string name="camera_swap_dont_show_again">Ne plus afficher</string>
+    <string name="camera_swap_close">Fermer</string>
+    <string name="camera_swap_long_text">Avant de commencer à prendre des photos, vérifiez que vous avez sélectionné la bonne résolution pour ce module d’appareil-photo à partir de l’appli.\n\nPour plus d’informations sur le sujet, reportez-vous à l’article ci-dessous qui vous explique comment tirer le meilleur parti de votre appareil-photo :</string>
+    <string name="camera_swap_url">https://fairphone.com/camera-swap-fr</string>
+</resources>
