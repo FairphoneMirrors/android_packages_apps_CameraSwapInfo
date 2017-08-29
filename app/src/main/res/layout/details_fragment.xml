@@ -12,50 +12,48 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/background"
-        android:gravity="center_horizontal"
-        android:orientation="vertical"
         android:padding="@dimen/main_padding">
 
         <Button
-            android:id="@+id/button_close"
+            android:id="@+id/button_got_it"
             style="@style/ButtonWhiteBlue"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            android:text="@string/camera_swap_close" />
+            android:text="@string/camera_swap_got_it" />
+
+        <TextView
+            android:id="@+id/part1"
+            style="@style/TextBold16BlueDark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:lineSpacingExtra="4sp"
+            android:text="@string/camera_swap_text_part1_both" />
 
         <TextView
             android:id="@+id/instructions"
             style="@style/TextRegular14BlueDark"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="@dimen/main_small_text_below_heading_margin"
+            android:layout_below="@id/part1"
+            android:lineSpacingExtra="4sp"
             android:text="@string/camera_swap_long_text"
-            android:layout_alignParentTop="true"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
-            android:layout_marginBottom="10sp"
-            android:lineSpacingExtra="4sp" />
+            android:autoLink="web" />
 
-        <TextView
-            android:id="@+id/url"
-            style="@style/TextRegular14BlueDark"
-            android:autoLink="web"
+        <Button
+            android:id="@+id/button_remind_later"
+            style="@style/ButtonWhiteGrey"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/camera_swap_url"
-            android:layout_below="@+id/instructions"
-            android:layout_alignStart="@+id/instructions" />
-
-        <CheckBox
-            style="@style/TextRegular14BlueDark"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/dont_show_again_checkbox"
-            android:checked="false"
-            android:text="@string/camera_swap_dont_show_again"
-            android:layout_above="@+id/button_close"
-            android:layout_marginBottom="5dp" />
+            android:text="@string/camera_swap_remind_me_later"
+            android:layout_above="@+id/button_got_it"
+            android:layout_marginBottom="@dimen/main_margin_small" />
 
     </RelativeLayout>
 

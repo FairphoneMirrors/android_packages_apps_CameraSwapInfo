@@ -4,7 +4,11 @@
     android:versionCode="1"
     android:versionName="1.0.0">
 
-    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <permission
+        android:name="com.fairphone.cameraswapinfo.permission.HANDLE_CAMERA_CHANGED"
+        android:protectionLevel="signature"/>
 
     <application
         android:allowBackup="true"
@@ -12,6 +16,15 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
+        <receiver
+            android:name=".BootUpReceiver"
+            android:enabled="false"
+            android:permission="android.permission.RECEIVE_BOOT_COMPLETED">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
 
         <activity android:name=".CameraSwapDetailsActivity"
             android:enabled="true"
@@ -21,6 +34,13 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+
+        <service
+            android:name=".CameraSwapNotificationService"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="com.fairphone.psensor.permission.HANDLE_CAMERA_CHANGED" />
+
     </application>
 
 </manifest>

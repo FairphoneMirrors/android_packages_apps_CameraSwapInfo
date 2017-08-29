@@ -5,5 +5,15 @@
     <string name="camera_swap_url">https://fairphone.com/camera-swap</string>
     <string name="camera_swap_dont_show_again">Don\'t show again</string>
     <string name="camera_swap_close">Close</string>
-    <string name="camera_swap_long_text">Make sure to select the appropriate resolution for this camera module in your camera app before starting to take pictures.\n\nVisit the following article for this and more information on how to get the best out of your camera:</string>
+    <string name="camera_swap_remind_me_later">Remind me later</string>
+    <string name="camera_swap_got_it">Got it</string>
+    <string name="camera_swap_long_text">If you are using third-party camera applications, you might need to select a different resolution. Visit <a href="https://fairphone.com/camera-swap">https://fairphone.com/camera-swap</a> for more information.</string>
+    <string name="camera_swap_text_part1_main">Your main camera is now ready to be used.</string>
+    <string name="camera_swap_text_part1_front">Your front camera is now ready to be used.</string>
+    <string name="camera_swap_text_part1_both">Your main camera and front camera are now ready to be used.</string>
+    <string name="camera_swap_notification_title">Camera Module</string>
+    <string name="camera_swap_notification_summary">Camera module successfully replaced.</string>
+    <string name="camera_swap_notification_text">To make sure your new camera works optimally, please read these tips.</string>
+    <string name="camera_swap_notification_dismiss">Dismiss</string>
+    <string name="camera_swap_notification_open">Open</string>
 </resources>
