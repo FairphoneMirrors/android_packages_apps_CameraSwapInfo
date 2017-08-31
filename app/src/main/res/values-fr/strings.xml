@@ -1,8 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="camera_swap_instructions">Le module caméra a bien été remplacé</string>
-    <string name="camera_swap_dont_show_again">Ne plus afficher</string>
-    <string name="camera_swap_close">Fermer</string>
-    <string name="camera_swap_long_text">Avant de commencer à prendre des photos, vérifiez que vous avez sélectionné la bonne résolution pour ce module d’appareil-photo à partir de l’appli.\n\nPour plus d’informations sur le sujet, reportez-vous à l’article ci-dessous qui vous explique comment tirer le meilleur parti de votre appareil-photo :</string>
-    <string name="camera_swap_url">https://fairphone.com/camera-swap-fr</string>
+    <plurals name="camera_swap_notification_title">
+        <item quantity="other">Configuration caméra</item>
+    </plurals>
+    <plurals name="camera_swap_notification_summary">
+        <item quantity="one">La caméra a bien été remplacée.</item>
+        <item quantity="other">Les caméras ont bien été remplacées.</item>
+    </plurals>
+    <plurals name="camera_swap_notification_text">
+        <item quantity="one">Suivez nos conseils pour assurer le bon fonctionnement de votre nouvelle caméra.</item>
+        <item quantity="other">Suivez nos conseils pour assurer le bon fonctionnement de vos nouvelles caméras.</item>
+    </plurals>
+    <string name="camera_swap_remind_me_later">Plus tard</string>
+    <string name="camera_swap_got_it">OK, j\'ai compris</string>
+    <plurals name="camera_swap_title">
+        <item quantity="one">Caméra remplacée\navec succès</item>
+        <item quantity="other">Caméras remplacées\navec succès</item>
+    </plurals>
+    <string name="camera_swap_text_part1_main">Votre caméra principale est maintenant prête à être utilisée.</string>
+    <string name="camera_swap_text_part1_front">Votre caméra frontale est maintenant prête à être utilisée.</string>
+    <string name="camera_swap_text_part1_both">Votre caméra principale ainsi que votre caméra frontale sont prêtes à être utlisées.</string>
+    <string name="camera_swap_long_text">Si vous utilisez d\'autres applications photo, vous aurez peut-être besoin de changer le paramètre de résolution. Rendez-vous sur <a href="https://fairphone.com/camera-swap-fr">https://fairphone.com/camera-swap-fr</a> pour plus d\'information.</string>
 </resources>

@@ -1,8 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="camera_swap_instructions">Cameramodule succesvol vervangen</string>
-    <string name="camera_swap_dont_show_again">Niet meer laten zien</string>
-    <string name="camera_swap_close">Sluiten</string>
-    <string name="camera_swap_long_text">Selecteer de juiste resolutie voor deze cameramodule in je camera app voordat je foto’s begint met foto’s nemen.\n\nBekijk hiervoor het volgende artikel en lees meer over hoe je het beste uit je camera kunt halen:</string>
-    <string name="camera_swap_url">https://fairphone.com/camera-swap-nl</string>
+    <plurals name="camera_swap_notification_title">
+        <item quantity="one">Cameraconfiguratie</item>
+        <item quantity="other">Cameraconfiguratie</item>
+    </plurals>
+    <plurals name="camera_swap_notification_summary">
+        <item quantity="one">Camera succesvol vervangen.</item>
+        <item quantity="other">Camera's succesvol vervangen.</item>
+    </plurals>
+    <plurals name="camera_swap_notification_text">
+        <item quantity="one">Om ervoor te zorgen dat je nieuwe camera optimaal functioneert, lees alsjeblieft deze tips.</item>
+        <item quantity="other">Om ervoor te zorgen dat je nieuwe camera\'s optimaal functioneren, lees alsjeblieft deze tips.</item>
+    </plurals>
+    <string name="camera_swap_remind_me_later">Later</string>
+    <string name="camera_swap_got_it">OK, begrepen</string>
+    <plurals name="camera_swap_title">
+        <item quantity="one">Camera\nsuccesvol vervangen</item>
+        <item quantity="other">Camera\'s\nsuccessvol vervangen</item>
+    </plurals>
+    <string name="camera_swap_text_part1_main">Je primaire camera is nu klaar voor gebruik.</string>
+    <string name="camera_swap_text_part1_front">Je voorste camera is nu klaar voor gebruik.</string>
+    <string name="camera_swap_text_part1_both">Je primaire camera en voorste camera zijn nu klaar voor gebruik.</string>
+    <string name="camera_swap_long_text">Als je camerapplicaties van derden gebruikt kan het zijn dat je een andere resolutie moet selecteren. Bezoek <a href="https://fairphone.com/camera-swap-nl">https://fairphone.com/camera-swap-nl</a> voor meer informatie.</string>
 </resources>

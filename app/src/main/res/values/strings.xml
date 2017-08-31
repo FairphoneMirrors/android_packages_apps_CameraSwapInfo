@@ -5,7 +5,7 @@
         <item quantity="one">Camera\nsuccessfully replaced</item>
         <item quantity="other">Cameras\nsuccessfully replaced</item>
     </plurals>
-    <string name="camera_swap_remind_me_later">Remind me later</string>
+    <string name="camera_swap_remind_me_later">Later</string>
     <string name="camera_swap_got_it">Got it</string>
     <string name="camera_swap_long_text">If you are using third-party camera applications, you might need to select a different resolution. Visit <a href="https://fairphone.com/camera-swap">https://fairphone.com/camera-swap</a> for more information.</string>
     <string name="camera_swap_text_part1_main">Your main camera is now ready to be used.</string>

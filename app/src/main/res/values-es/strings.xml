@@ -1,8 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="camera_swap_instructions">Cámara reemplazada con éxito</string>
-    <string name="camera_swap_dont_show_again">No mostrar de nuevo</string>
-    <string name="camera_swap_close">Cerrar</string>
-    <string name="camera_swap_long_text">"Antes de hacer fotos, asegúrate de seleccionar la resolución adecuada para este módulo de cámara en tu aplicación de cámara.\n\nLee el siguiente artículo para más información y para sacar el máximo provecho a tu nueva cámara. "</string>
-    <string name="camera_swap_url">https://fairphone.com/camera-swap-es</string>
+    <plurals name="camera_swap_notification_title">
+        <item quantity="one">Configuración de cámara</item>
+        <item quantity="other">Configuración de cámaras</item>
+    </plurals>
+    <plurals name="camera_swap_notification_summary">
+        <item quantity="one">Cámara reemplazada con éxito.</item>
+        <item quantity="other">Cámaras reemplazadas con éxito.</item>
+    </plurals>
+    <plurals name="camera_swap_notification_text">
+        <item quantity="one">Lee nuestros consejos para asegurar que tu cámara nueva funciona a la perfección.</item>
+        <item quantity="other">Lee nuestros consejos para asegurar que tus nuevas cámaras funcionan a la perfección.</item>
+    </plurals>
+    <string name="camera_swap_remind_me_later">Luego</string>
+    <string name="camera_swap_got_it">Ok, entendido</string>
+    <plurals name="camera_swap_title">
+        <item quantity="one">Cámara\nha sido reemplazada exitosamente</item>
+        <item quantity="other">Cámaras\nreemplazadas exitosamente</item>
+    </plurals>
+    <string name="camera_swap_text_part1_main">Tú cámara princpial está lista para ser utilizada.</string>
+    <string name="camera_swap_text_part1_front">Tu cámara frontal está lista para ser utilizada.</string>
+    <string name="camera_swap_text_part1_both">Tu cámara principal y cámara frontal están listas para ser utilizadas.</string>
+    <string name="camera_swap_long_text">Si estás usando una aplicación de cámara de un tercero, quizás necesites seleccionar una resolución diferente. Visita <a href="https://fairphone.com/camera-swap-es">https://fairphone.com/camera-swap-es</a> para más información.</string>
 </resources>
