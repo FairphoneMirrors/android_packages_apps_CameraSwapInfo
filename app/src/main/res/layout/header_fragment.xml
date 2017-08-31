@@ -7,13 +7,14 @@
     android:paddingRight="10dp">
 
     <TextView
+        android:id="@+id/title"
         style="@style/TitleLightPrimary"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:ellipsize="end"
         android:gravity="center_vertical|center_horizontal"
         android:lines="3"
-        android:text="@string/camera_swap_instructions"
+        android:text="@string/app_name"
         android:textAppearance="@style/TitleLight"
         android:lineSpacingExtra="10sp"
         android:textSize="30sp" />

@@ -38,6 +38,20 @@ public class CameraSwapInfoPreferences {
         return preferenceManager.getBoolean(PREF_HAS_MAIN_CAMERA_CHANGED, false);
     }
 
+    static int getAmountOfCamerasChanged(Context context) {
+        SharedPreferences preferenceManager =
+                PreferenceManager.getDefaultSharedPreferences(context);
+        int amount = 0;
+
+        if (preferenceManager.getBoolean(PREF_HAS_FRONT_CAMERA_CHANGED, false)) {
+            amount += 1;
+        }
+        if (preferenceManager.getBoolean(PREF_HAS_MAIN_CAMERA_CHANGED, false)) {
+            amount += 1;
+        }
+
+        return amount;
+    }
 
     static boolean doesNotificationNeedDismissal(Context context) {
         SharedPreferences preferenceManager =

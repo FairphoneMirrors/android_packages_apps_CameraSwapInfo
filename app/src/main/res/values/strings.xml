@@ -1,19 +1,25 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources>
     <string name="app_name" translatable="false">Fairphone Camera Info</string>
-    <string name="camera_swap_instructions">Camera module successfully replaced</string>
-    <string name="camera_swap_url">https://fairphone.com/camera-swap</string>
-    <string name="camera_swap_dont_show_again">Don\'t show again</string>
-    <string name="camera_swap_close">Close</string>
+    <plurals name="camera_swap_title">
+        <item quantity="one">Camera\nsuccessfully replaced</item>
+        <item quantity="other">Cameras\nsuccessfully replaced</item>
+    </plurals>
     <string name="camera_swap_remind_me_later">Remind me later</string>
     <string name="camera_swap_got_it">Got it</string>
     <string name="camera_swap_long_text">If you are using third-party camera applications, you might need to select a different resolution. Visit <a href="https://fairphone.com/camera-swap">https://fairphone.com/camera-swap</a> for more information.</string>
     <string name="camera_swap_text_part1_main">Your main camera is now ready to be used.</string>
     <string name="camera_swap_text_part1_front">Your front camera is now ready to be used.</string>
     <string name="camera_swap_text_part1_both">Your main camera and front camera are now ready to be used.</string>
-    <string name="camera_swap_notification_title">Camera Module</string>
-    <string name="camera_swap_notification_summary">Camera module successfully replaced.</string>
-    <string name="camera_swap_notification_text">To make sure your new camera works optimally, please read these tips.</string>
-    <string name="camera_swap_notification_dismiss">Dismiss</string>
-    <string name="camera_swap_notification_open">Open</string>
+    <plurals name="camera_swap_notification_title">
+        <item quantity="other">Camera configuration</item>
+    </plurals>
+    <plurals name="camera_swap_notification_summary">
+        <item quantity="one">Camera successfully replaced.</item>
+        <item quantity="other">Cameras successfully replaced.</item>
+    </plurals>
+    <plurals name="camera_swap_notification_text">
+        <item quantity="one">To make sure your new camera works optimally, please read these tips.</item>
+        <item quantity="other">To make sure your new cameras work optimally, please read these tips.</item>
+    </plurals >
 </resources>

@@ -49,15 +49,21 @@ public class CameraSwapDetailsActivity extends Activity implements View.OnClickL
     }
 
     private void setInstructionsText() {
-        TextView textView = (TextView) findViewById(R.id.part1);
+        TextView titleView = (TextView) findViewById(R.id.title);
+        TextView part1View = (TextView) findViewById(R.id.part1);
+
+        int amountOfCameras = 1;
 
         if (!CameraSwapInfoPreferences.hasFrontCameraChanged(this)) {
-            textView.setText(getString(R.string.camera_swap_text_part1_main));
+            part1View.setText(getString(R.string.camera_swap_text_part1_main));
         } else if (!CameraSwapInfoPreferences.hasMainCameraChanged(this)) {
-            textView.setText(getString(R.string.camera_swap_text_part1_front));
+            part1View.setText(getString(R.string.camera_swap_text_part1_front));
         } else {
-            textView.setText(getString(R.string.camera_swap_text_part1_both));
+            amountOfCameras = 2;
+            part1View.setText(getString(R.string.camera_swap_text_part1_both));
         }
+
+        titleView.setText(getResources().getQuantityString(R.plurals.camera_swap_title, amountOfCameras));
     }
 
     private void destroyNotification() {

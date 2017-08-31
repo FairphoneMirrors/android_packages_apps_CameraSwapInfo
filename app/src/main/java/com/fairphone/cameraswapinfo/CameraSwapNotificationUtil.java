@@ -13,17 +13,17 @@ public class CameraSwapNotificationUtil {
             "com.fairphone.cameraswapinfo.CameraSwapDetailsActivity";
     static final int NOTIFICATION_ID = 0;
 
-    static protected String getNotificationTitle(Context context) {
-        return context.getString(R.string.camera_swap_notification_title);
+    static protected String getNotificationTitle(Context context, int amountOfCameras) {
+        return context.getResources().getQuantityString(R.plurals.camera_swap_notification_title, amountOfCameras);
     }
 
-    static protected String getNotificationShortSummary(Context context) {
-        return context.getString(R.string.camera_swap_notification_summary);
+    static protected String getNotificationShortSummary(Context context, int amountOfCameras) {
+        return context.getResources().getQuantityString(R.plurals.camera_swap_notification_summary, amountOfCameras);
     }
 
-    static protected String getNotificationExtendedSummary(Context context) {
-        return context.getString(R.string.camera_swap_notification_summary) + " "
-                + context.getString(R.string.camera_swap_notification_text);
+    static protected String getNotificationExtendedSummary(Context context, int amountOfCameras) {
+        return context.getResources().getQuantityString(R.plurals.camera_swap_notification_summary, amountOfCameras)
+                + " " + context.getResources().getQuantityString(R.plurals.camera_swap_notification_text, amountOfCameras);
     }
 
     public static void showNotification(Context context) {
@@ -41,14 +41,16 @@ public class CameraSwapNotificationUtil {
     }
 
     static private Notification getNotification(Context context) {
+        int amountOfCameras = CameraSwapInfoPreferences.getAmountOfCamerasChanged(context);
+
         PendingIntent openIntent = getPendingIntent(context);
         NotificationCompat.Builder mBuilder =
                 new NotificationCompat.Builder(context)
                         .setSmallIcon(R.drawable.ic_stat_camera_swap)
-                        .setContentTitle(getNotificationTitle(context))
-                        .setContentText(getNotificationShortSummary(context))
+                        .setContentTitle(getNotificationTitle(context, amountOfCameras))
+                        .setContentText(getNotificationShortSummary(context, amountOfCameras))
                         .setStyle(new NotificationCompat.BigTextStyle().bigText(
-                                getNotificationExtendedSummary(context)))
+                                getNotificationExtendedSummary(context, amountOfCameras)))
                         .setColor(context.getResources().getColor(R.color.colorPrimary))
                         .setPriority(Notification.PRIORITY_MAX)
                         .setVisibility(Notification.VISIBILITY_PUBLIC)
