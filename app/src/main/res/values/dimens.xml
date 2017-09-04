@@ -16,5 +16,7 @@
     <dimen name="main_padding_small">20dp</dimen>
     <dimen name="main_small_text_margin_top">43dp</dimen>
     <dimen name="main_small_text_below_heading_margin">20dp</dimen>
+    <dimen name="main_small_text_margin_start">5dp</dimen>
+    <dimen name="main_small_text_margin_end">5dp</dimen>
     <dimen name="main_button_margin_top">8dp</dimen>
 </resources>
