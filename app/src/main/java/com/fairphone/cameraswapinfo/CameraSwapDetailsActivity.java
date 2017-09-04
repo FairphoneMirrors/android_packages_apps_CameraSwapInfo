@@ -2,20 +2,14 @@ package com.fairphone.cameraswapinfo;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
 /**
- * Display information and instructions what to do after a camera replacement.
- *
- * Defaults to loading a support article in a WebView. Shows limited information in case of
- * lacking internet connection.
+ * Display information and instructions on what to do after a camera replacement.
  */
 public class CameraSwapDetailsActivity extends Activity implements View.OnClickListener {
-
-    private final String TAG ="CameraSwapInfo";
 
     Button mButtonGotIt;
     Button mButtonRemindLater;
@@ -24,7 +18,6 @@ public class CameraSwapDetailsActivity extends Activity implements View.OnClickL
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        destroyNotification();
         setContentView(R.layout.camera_swap_details_activity);
         setInstructionsText();
         configureButtons();
@@ -33,10 +26,9 @@ public class CameraSwapDetailsActivity extends Activity implements View.OnClickL
     @Override
     public void onClick(View view) {
         if (view == mButtonGotIt) {
-            CameraSwapInfoPreferences.setNotificationNeedsDismissal(this, false);
-            BootUpReceiver.disable(this);
-        } else if (view == mButtonRemindLater){
-            Log.i(TAG, "Closing CameraSwapInfo details activity. Will remind the user on next boot.");
+            CameraSwapNotificationService.startActionAcknowledgeCameraChanged(this);
+        } else if (view == mButtonRemindLater) {
+            CameraSwapNotificationService.startActionRemindCameraChangedLater(this);
         }
         finish();
     }
@@ -64,9 +56,5 @@ public class CameraSwapDetailsActivity extends Activity implements View.OnClickL
         }
 
         titleView.setText(getResources().getQuantityString(R.plurals.camera_swap_title, amountOfCameras));
-    }
-
-    private void destroyNotification() {
-        CameraSwapNotificationUtil.destroyNotification(this);
     }
 }

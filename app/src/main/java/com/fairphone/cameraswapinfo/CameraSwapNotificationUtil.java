@@ -28,7 +28,6 @@ public class CameraSwapNotificationUtil {
 
     public static void showNotification(Context context) {
         Notification notification = getNotification(context);
-        CameraSwapInfoPreferences.setNotificationNeedsDismissal(context, true);
         NotificationManager notificationManager = (NotificationManager) context
                 .getSystemService(Context.NOTIFICATION_SERVICE);
         notificationManager.notify(NOTIFICATION_ID, notification);
@@ -60,8 +59,9 @@ public class CameraSwapNotificationUtil {
     }
 
     private static PendingIntent getPendingIntent(Context context) {
-        Intent intent = new Intent(Intent.ACTION_MAIN);
-        intent.setClassName(PACKAGE_CAMERA_SWAP_INFO, ACTIVITY_CAMERA_SWAP_INFO_DETAILS);
-        return PendingIntent.getActivity(context, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT);
+        return PendingIntent.getActivity(context, 0,
+                new Intent(context, CameraSwapDetailsActivity.class)
+                        .setFlags(Intent.FLAG_ACTIVITY_EXCLUDE_FROM_RECENTS | Intent.FLAG_ACTIVITY_NEW_TASK),
+                PendingIntent.FLAG_UPDATE_CURRENT);
     }
 }
