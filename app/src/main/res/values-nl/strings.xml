@@ -6,7 +6,7 @@
     </plurals>
     <plurals name="camera_swap_notification_summary">
         <item quantity="one">Camera succesvol vervangen.</item>
-        <item quantity="other">Camera's succesvol vervangen.</item>
+        <item quantity="other">Camera\'s succesvol vervangen.</item>
     </plurals>
     <plurals name="camera_swap_notification_text">
         <item quantity="one">Om ervoor te zorgen dat je nieuwe camera optimaal functioneert, lees alsjeblieft deze tips.</item>
