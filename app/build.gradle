@@ -7,8 +7,8 @@ android {
         applicationId "com.fairphone.com.fairphone.cameraswapinfo"
         minSdkVersion 22
         targetSdkVersion 23
-        versionCode 10100
-        versionName "1.1"
+        versionCode 10101
+        versionName "1.1.1"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
